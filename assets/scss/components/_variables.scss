@@ -1,0 +1,21 @@
+$primary-bg:              #f6f6f6;
+$secondary-bg:            #fafafa;
+$link-hover-bg:           #f1cdb3;
+
+$primary-color:           #545454;
+$secondary-color:         #292929;
+$footer-color:            #f1cdb3;
+
+$border-color:            #f1cdb3;
+$border-nav:              3px solid $border-color;
+
+$primary-font:            "Georgia";
+$secondary-font:          "Arial", sans-serif ;
+$footer-font:             "Times New Roman";
+
+.h1-heading {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 400;
+  letter-spacing: 2.1px;
+}              

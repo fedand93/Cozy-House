@@ -1,0 +1,48 @@
+.card {
+  max-width: 270px;
+  text-align: center;
+  background-color: $secondary-bg;
+  border-radius: 9px;
+  padding-bottom: 34px;
+  &:hover {
+    box-shadow: 0 2px 30px 5px rgba(78, 51, 51, 0.3);
+  }
+  &__media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    img {
+      object-fit: contain;
+      height: 270px;
+      margin: 0 auto;
+    }
+  }
+  &__title { 
+    // font-family: $prima;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin: 0 0 24px;
+  }
+  &__btn {
+    display: block;
+    background-color: transparent;
+    border-radius: 26px;
+    border: 2px solid $border-color;
+    color: $secondary-color;
+    font-size: 17px;
+    letter-spacing: 1.02px;
+    padding: 13px 30px;
+    margin: 0 auto;
+    outline: none;
+    &:hover {
+      background-color: $link-hover-bg;
+      cursor: pointer;
+    }
+  }
+}
+
+

@@ -1,0 +1,45 @@
+.header { 
+  background-color: $secondary-bg;
+}
+.header-content {
+  font-family: $secondary-font;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    color: $primary-color;
+    &__title {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 5px;
+      letter-spacing: 1.13px;
+    }
+    &__subtitle { 
+      color: #292929;
+      font-size: 13px;
+      // line-height: 29px;
+      letter-spacing: 1.3px;
+    }
+    &:hover { 
+      color: $secondary-color;
+    }
+
+  }
+  .nav { 
+    font-size: 15px;
+    &__item {
+      color: $primary-color;
+      padding: 5px 0;
+      &:not(:last-child) {
+        margin-right: 38px;
+      }
+      &:hover { 
+        color: $secondary-color;
+        border-bottom: $border-nav;
+        border-radius: 2px;
+      }  
+    }
+   }
+
+}

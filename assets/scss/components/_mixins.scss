@@ -1,0 +1,19 @@
+@mixin card-btn {
+  color: $secondary-color;
+  font-size: 17px;
+  font-weight: 400;
+  // line-height: 57px;
+  /* Text style for "L, earn Mo" */
+  letter-spacing: 1.02px;
+}
+
+@mixin page-btn () {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid $border-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman PSMT";
+}

@@ -1,0 +1,145 @@
+.section { 
+  padding: 70px 0;
+  &__cards {
+    background-color: $primary-bg;
+  }
+  &__title {
+    // color: #545454;
+    // font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 2.1px;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  &__pages {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .cards { 
+    margin-bottom: 60px;
+  }
+  .page-link { 
+    @include page-btn;
+    margin: 0 5px;
+    color: $secondary-color;
+    &:hover { 
+      background-color: $link-hover-bg;
+    }
+  }
+}
+.footer {
+  background-image: url("../img/footer-bg.png");
+  position: relative;
+  min-height: 360px;
+  .section-background { 
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content { 
+    align-items: center;
+    .pad {
+      padding-top: 75px;
+    }
+  }
+  &__contacts { 
+    max-width: 280px;
+    // margin-right: 175px;
+    .contacts-list {
+      list-style: none;
+      padding: 0;
+      li { 
+        padding-left: 55px;
+        // line-height: 55px;
+      }
+      
+      .mail { 
+        position: relative;
+        &::before { 
+          position: absolute;
+          content: '';
+          width: 40px;
+          height: 26px;
+          background-image: url('../img/envelope.png');
+          top: 13px;
+          left: 0px;
+        }
+      }
+      .phone { 
+        position: relative;
+        &::before { 
+          position: absolute;
+          content: '';
+          width: 40px;
+          height: 32px;
+          background-image: url("../img/telephone.png");
+          top: 8px;
+          left: 0px;
+        }
+      }
+      a { 
+        color: #f1cdb3;        
+        font-size: 20px;font-family: "Times New Roman PSMT";
+        line-height: 45px;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+  &__location {
+    max-width: 300px;
+    .location-list { 
+      list-style: none;
+      padding: 0;
+      .location-item { 
+        line-height: 20px;
+        position: relative;
+        padding-left: 45px;
+        color: #f1cdb3;        
+        font-size: 20px;
+        font-family: "Times New Roman PSMT";
+        letter-spacing: 1.2px;
+        &:not(:last-child){
+          margin-bottom: 23px;
+        }
+        &::before {
+          position: absolute;
+          content: '';
+          width: 26px;
+          height: 36px;
+          background-image: url('../img/pin.png');
+          top: 5px;
+          left: 0;
+        }        
+      }
+    }
+  }
+  &__media { 
+    position: relative;
+    img {
+      position: absolute;
+      max-width: 300px;
+      top: 30px;
+    }
+    
+  }
+  &__title {
+    color: #ffffff;
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 2.1px;
+  }
+}
